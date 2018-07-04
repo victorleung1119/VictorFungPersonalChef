@@ -1,0 +1,9 @@
+.heroOne {
+  background: url(/picture/heroOne.jpg);
+  display: block;
+  width: 100vw;
+
+}
+.bgcolor {
+  background-color: #f5e5d9;
+}
