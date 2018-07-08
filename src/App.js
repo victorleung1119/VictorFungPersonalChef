@@ -14,7 +14,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App p-1">
+      <div className="App p-0">
         <Router>
           <div>
             <Header />

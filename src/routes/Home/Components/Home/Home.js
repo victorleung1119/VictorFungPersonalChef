@@ -1,9 +1,34 @@
 import React, { Component } from 'react'
-import sampleDishOneImg from 'img/sampleDishOne.jpg'
-import sampleDishTwoImg from 'img/sampleDishTwo.jpg'
-import sampleDishThreeImg from 'img/sampleDishThree.jpg'
-
+import heroOneImg from 'img/heroOne.jpg'
+import chefIconSvg from 'img/chef.svg'
+import parallaxImg from 'img/parallax.jpg'
+import cateringIconSvg from 'img/catering.svg'
+import meetingIconSvg from 'img/meeting.svg'
+import IconCard from './IconCard/IconCard'
 import './Home.css'
+// import sampleDishOneImg from 'img/sampleDishOne.jpg'
+// import sampleDishTwoImg from 'img/sampleDishTwo.jpg'
+// import sampleDishThreeImg from 'img/sampleDishThree.jpg'
+
+const iconsummary = [{
+  icon: chefIconSvg,
+  title: `Personal Chef`,
+  description: <p className="text-center">When you want Chinese food at the comfort of your house but you
+    don't have time or the ability to cook and enjoy your time with
+    the guests, you need a personal chef. <strong>Victor Fung </strong>
+    can cook the food for you.</p>
+},{
+  icon: cateringIconSvg,
+  title: `Catering`,
+  description: <p className="text-center">When you want to bring Chinese food to your friend's house but
+    you don't have the time or the ability to cook, <strong>Victor
+    Fung </strong>can cook the food for you.</p>
+},{
+  icon: meetingIconSvg,
+  title: `Meet the Chef`,
+  description: <p className="text-center"><strong>Victor Fung </strong>has more than 50 years of cooking as
+    a personal chef and in restaurants.</p>
+}]
 
 class Home extends Component {
   render() {
@@ -21,19 +46,19 @@ class Home extends Component {
       // </div>
       <div>
         {/* Hero Picture */}
-        {/* <div>
-          <img className="col-12 px-0 img-fluid heroOne" src="./Picture/heroOne.jpg"></img>
-        </div> */}
-        <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
-          <div className="carousel-inner">
+        <div>
+          <img className="col-12 px-0 img-fluid heroOne" src={heroOneImg}></img>
+        </div>
+        {/* <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+          <div className="carousel-inner heights">
             <div className="carousel-item active">
-              <img className="d-block w-100" src={sampleDishOneImg} alt="First slide" />
+              <img className="d-block w-80 mx-auto" src={sampleDishOneImg} alt="First slide" />
             </div>
             <div className="carousel-item">
-              <img className="d-block w-100" src={sampleDishTwoImg} alt="Second slide" />
+              <img className="d-block w-80 mx-auto" src={sampleDishTwoImg} alt="Second slide" />
             </div>
             <div className="carousel-item">
-              <img className="d-block w-100" src={sampleDishThreeImg} alt="Third slide" />
+              <img className="d-block w-80 mx-auto" src={sampleDishThreeImg} alt="Third slide" />
             </div>
           </div>
           <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -44,7 +69,7 @@ class Home extends Component {
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="sr-only">Next</span>
           </a>
-        </div>
+        </div> */}
 
 
         {/* <div id="carouselExampleSlidesOnly" className="carousel slide mt-3" data-ride="carousel">
@@ -60,6 +85,39 @@ class Home extends Component {
             </div>
           </div>
         </div> */}
+        <div className='container my-5'>
+          <div className='row'>
+            {iconsummary.map((iconsummary, index) => {
+              return (
+                <IconCard key={index} {...iconsummary} />
+              )
+            })}
+          </div>
+        </div>
+
+        {/* Parallax scrolling */}
+        <div className="parallax" src={parallaxImg}></div>
+
+        {/* form */}
+        <div className="card">
+          <form>
+            <div className="form-group">
+              <label for="inputName">Name</label>
+              <input type="name" className="form-control" id="inputName" aria-describedby="inputName" placeholder="Enter Name" />
+            </div>
+            <div className="form-group">
+              <label for="inputEmail">Email Address</label>
+              <input type="email" className="form-control" id="inputEmail" placeholder="Enter Email Address" />
+            </div>
+          </form>
+        </div>
+
+        <img className='container' src={parallaxImg} />
+        <div className="container-fluid footer">
+
+          {/* Footer */}
+          <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        </div>
       </div>
     )
   }

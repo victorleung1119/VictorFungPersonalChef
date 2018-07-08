@@ -1,14 +1,19 @@
 {
-  "main.css": "static/css/main.4ccf66af.css",
-  "main.css.map": "static/css/main.4ccf66af.css.map",
-  "main.js": "static/js/main.6036018a.js",
-  "main.js.map": "static/js/main.6036018a.js.map",
+  "main.css": "static/css/main.9399eb38.css",
+  "main.css.map": "static/css/main.9399eb38.css.map",
+  "main.js": "static/js/main.b89c0b18.js",
+  "main.js.map": "static/js/main.b89c0b18.js.map",
+  "static/media/catering.svg": "static/media/catering.2119bb11.svg",
+  "static/media/chef.svg": "static/media/chef.75b8029b.svg",
   "static/media/cookLaughTwo.jpg": "static/media/cookLaughTwo.0683f32d.jpg",
   "static/media/friedRice.jpg": "static/media/friedRice.994eaa0e.jpg",
+  "static/media/heroOne.jpg": "static/media/heroOne.c53417aa.jpg",
   "static/media/lemonChicken.jpg": "static/media/lemonChicken.b30b6a31.jpg",
+  "static/media/meeting.svg": "static/media/meeting.61b09845.svg",
   "static/media/quailDish.jpg": "static/media/quailDish.d0f67dc1.jpg",
   "static/media/sampleDishOne.jpg": "static/media/sampleDishOne.dfee8b8a.jpg",
   "static/media/sampleDishThree.jpg": "static/media/sampleDishThree.dc5459ed.jpg",
   "static/media/sampleDishTwo.jpg": "static/media/sampleDishTwo.69c106d9.jpg",
-  "static/media/taiChiSoup.jpg": "static/media/taiChiSoup.e4dc17e9.jpg"
+  "static/media/taiChiSoup.jpg": "static/media/taiChiSoup.e4dc17e9.jpg",
+  "static/media/victorFungLogo.png": "static/media/victorFungLogo.a42de6ae.png"
 }

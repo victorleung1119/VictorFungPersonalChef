@@ -7,3 +7,28 @@
 .bgcolor {
   background-color: #f5e5d9;
 }
+.heights {
+  height: 50vh;
+}
+
+.icon {
+  height: 6.25rem;
+}
+.textcolor {
+  color: #32CD32;
+}
+.parallax {
+
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer {
+  background-color: #ccc;
+}
