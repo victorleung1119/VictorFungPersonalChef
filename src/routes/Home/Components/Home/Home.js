@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import heroOneImg from 'img/heroOne.jpg'
 import chefIconSvg from 'img/chef.svg'
-import parallaxImg from 'img/parallax.jpg'
 import cateringIconSvg from 'img/catering.svg'
 import meetingIconSvg from 'img/meeting.svg'
 import IconCard from './IconCard/IconCard'
@@ -96,7 +95,7 @@ class Home extends Component {
         </div>
 
         {/* Parallax scrolling */}
-        <div className="parallax" src={parallaxImg}></div>
+        <div className="parallax"></div>
 
         {/* form */}
         <div className="card">
@@ -112,7 +111,6 @@ class Home extends Component {
           </form>
         </div>
 
-        <img className='container' src={parallaxImg} />
         <div className="container-fluid footer">
 
           {/* Footer */}

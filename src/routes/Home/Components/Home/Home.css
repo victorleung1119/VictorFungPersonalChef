@@ -18,7 +18,7 @@
   color: #32CD32;
 }
 .parallax {
-
+  background: url('/img/parallax.jpg');
 
   /* Set a specific height */
   min-height: 300px;
